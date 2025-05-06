@@ -86,13 +86,13 @@ let allMassesArray = characters.map(function (value) {
 console.log(allMassesArray);
 
 console.log("<<<<<<<< 7. Sort by name alphabetically (A to Z). >>>>>>>>");
-let sortByNameAlphabetically = characters.sort(function (a, b) {
+let sortByNameAlphabetically = characters.slice().sort(function (a, b) {
   return a.name.localeCompare(b.name);
 });
 console.log(sortByNameAlphabetically);
 
 console.log("<<<<<<<< 8. Sort by height (low to high). >>>>>>>>");
-let sortByHeightLowToHigh = characters.sort(function (a, b) {
+let sortByHeightLowToHigh = characters.slice().sort(function (a, b) {
   return a.height - b.height
 });
 console.log(sortByHeightLowToHigh);
