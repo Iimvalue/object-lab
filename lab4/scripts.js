@@ -27,8 +27,31 @@ function getSummary() {
   );
 }
 
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+function sub(num1, num2) {
+  return num1 - num2;
+}
+
+function mult(num1, num2) {
+  return num1 * num2;
+}
+
+function div(num1, num2) {
+  return num1 / num2;
+}
+
 console.log(bookFlight("الرياض"));
 
 addDestination("دبي");
 
 getSummary();
+
+console.log(sum(1,2));
+console.log(sub(2,1));
+console.log(mult(3,1))
+console.log(div(10,2))
+
+
